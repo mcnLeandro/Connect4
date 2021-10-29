@@ -4,26 +4,26 @@ import Setting from '@/views/Setting.vue';
 import Game from '@/views/Game.vue';
 
 const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/setting',
-    name: 'Setting',
-    component: Setting,
-  },
-  {
-    path: '/game',
-    name: 'Game',
-    component: Game,
-  },
+    {
+        path: '/',
+        name: 'Home',
+        component: Home,
+    },
+    {
+        path: '/setting',
+        name: 'Setting',
+        component: Setting,
+    },
+    {
+        path: '/game',
+        name: 'Game',
+        component: Game,
+    },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
+    history: createWebHistory(process.env.BASE_URL),
+    routes,
 });
 
 export default router;
