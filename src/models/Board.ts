@@ -30,7 +30,9 @@ class Board {
       }
       array.push(row);
     }
-    
+
     return array;
   }
 }
+
+export default Board;
