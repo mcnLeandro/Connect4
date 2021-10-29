@@ -1,7 +1,7 @@
 const Config = {
     ball: {
+        empty: '#ffffff',
         color: {
-            empty: '#ffffff',
             red: '#ff0000',
             blue: '#0000ff',
             purple: '#6a00cf',
@@ -10,15 +10,14 @@ const Config = {
     },
     board: {
         size: {
-            min: 0,
-            max: 0,
+            min: 4,
+            max: 7,
         },
     },
-
     player: {
         number: {
-            min: 0,
-            max: 0,
+            min: 2,
+            max: 4,
         },
     },
 };

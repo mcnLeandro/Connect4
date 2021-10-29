@@ -5,7 +5,7 @@ class Ball {
     public x: number;
     public y: number;
     public constructor(x: number, y: number) {
-        this.color = Config.ball.color.empty;
+        this.color = Config.ball.empty;
         this.x = x;
         this.y = y;
     }
