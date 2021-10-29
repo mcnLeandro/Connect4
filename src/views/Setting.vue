@@ -18,6 +18,7 @@
                     v-model="playerNumber"
                     :min="Config.player.number.min"
                     :max="Config.player.number.max"
+                    @change="resizePlayers"
                 />
             </div>
 
@@ -87,6 +88,19 @@ export default defineComponent({
             this.$emit('board', new Board(this.boardSize));
 
             this.$router.push('game');
+        },
+        resizePlayers: function () {
+            const l = () => this.players.length
+            while (
+                this.playerNumber > l() ||
+                this.playerNumber < l()
+            ) {
+                if (this.playerNumber > l()) {
+                    this.players.push(new Player());
+                } else if (this.playerNumber < l()) {
+                    this.players.pop();
+                }
+            }
         },
     },
 });
