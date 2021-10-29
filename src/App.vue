@@ -1,7 +1,6 @@
 <template>
     <div class="vh-100 bg-white">
         <router-view @players="setPlayers" @board="setBoard"></router-view>
-        <button @click="log">graho</button>
     </div>
 </template>
 
