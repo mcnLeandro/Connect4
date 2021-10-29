@@ -1,6 +1,10 @@
 <template>
     <div class="home d-flex justify-content-center align-items-center vh-100">
-        <MDBBtn color="primary">GO</MDBBtn>
+        <router-link to="/setting">
+            <MDBBtn color="primary">
+                GO
+            </MDBBtn>
+        </router-link>
     </div>
 </template>
 
